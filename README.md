@@ -7,17 +7,34 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 In the project directory, you NEED to create a src/data/dates.json file:
 with the structure ->
 
-`[
-    {
-    "nom": "My contact name",
-    "id": "The indenticator of the country",
-    "number": "Phone number",
-    "date": "Date of birthday",
-    "gender": 0 if girl 1 if boy and 2 if love
-  }
-]`
+## 
+    [
+        {
+            "id": int,
+            "nom": string,
+            "number": string,
+            "date": "dd-yy",
+            "gender": int
+        }
+    ]
 
-## Run the bot in developpement with the following command
+for the gender, different values are :
+
+## 
+    gender_values = {
+        0: 'girl'
+        1: 'boy'
+        2: 'other/lover'
+    }
+
+## Configure
+
+Then (if wanted) configure your formulas and Data File (.json). Initial config perfectly works
+
+## Development run
+
+Run the bot in development with the following command ->
+
 ### `python3 ./src/app.py` 
 
 ## Deployment
