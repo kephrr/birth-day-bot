@@ -18,7 +18,7 @@ with the structure ->
 ]`
 
 ## Run the bot in developpement with the following command
-### `python3 app.py` 
+### `python3 ./src/app.py` 
 
 ## Deployment
 

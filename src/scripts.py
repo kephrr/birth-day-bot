@@ -1,11 +1,5 @@
 import json
-from datetime import time
-
-
-GENDER = "%s%"
-NAME = "%n%"
-EMOJI = "%e%"
-
+from const import CRITERIA
 
 def generate_message(formula, contact)->str:
     gender=""
@@ -20,14 +14,14 @@ def generate_message(formula, contact)->str:
 
 # TAKE A FORMULA AND ADAPT TO THE CONTACT
 def modelize(formula, name, gender)->str:
-    if is_inside_text(GENDER, formula) :
-        formula = formula.replace(GENDER, gender)
+    if is_inside_text(CRITERIA['GENDER'], formula) :
+        formula = formula.replace(CRITERIA['GENDER'], gender)
 
-    if is_inside_text(NAME, formula):
-        formula = formula.replace(NAME, name)
+    if is_inside_text(CRITERIA['NAME'], formula):
+        formula = formula.replace(CRITERIA['NAME'], name)
 
-    if is_inside_text(EMOJI, formula):
-        formula = formula.replace(EMOJI, ":)")
+    if is_inside_text(CRITERIA['EMOJI'], formula):
+        formula = formula.replace(CRITERIA['EMOJI'], ":)")
 
     return  formula
 
