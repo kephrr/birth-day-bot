@@ -1,5 +1,6 @@
 import scripts as bot
 import random
+from const import DATES_FILE, FORMULAS
 
 contacts = bot.read_json(DATES_FILE)
 formulas = bot.read_json(FORMULAS)

@@ -5,7 +5,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Create Date File
 
 In the project directory, you NEED to create a src/data/dates.json file:
-with the structure ->
+with the structure :
 
 ## 
     [
